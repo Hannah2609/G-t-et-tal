@@ -12,6 +12,7 @@ function clickButton() {
     
     if (guess === number) {
         resultText.textContent = "Det er rigtigt! Tillykke";
+        resultText.classList.add("bounce");
     } 
     else if (guess > number) {
         resultText.textContent = "Tallet er for højt";
